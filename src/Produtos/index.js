@@ -7,7 +7,7 @@ const Produto = ({ handleAddItemToCart }) => {
     <main>
         <section className='area-produto'> 
             {produtos.map((produtos, index) => (
-              <CardProduto img={produtos.url} titulo={produtos.name} description={produtos.description} price={produtos.price}
+              <CardProduto img={produtos.img} titulo={produtos.name} description={produtos.description} price={produtos.price}
               handleAddItemToCart={handleAddItemToCart}
               />         
             ))}
